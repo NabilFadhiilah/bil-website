@@ -1,0 +1,172 @@
+{
+  "basic_info":[
+    {
+    "name": "Nabil Fadhilah",
+    "title": "Product Manager",
+    "contact": {
+      "email": "nabilfadhilah48@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/nabil-fadhiilah/",
+      "github": "https://github.com/NabilFadhiilah"
+    },
+    "summary": "Product Owner with over 2 years of experience in the tech startup industry. Skilled in product and project management, leading cross-functional teams, and aligning stakeholder expectations. Proficient in user needs analysis, workflow design, and implementing effective tech solutions. A fast learner with strong attention to detail and adaptability to change to ensure business goals are met efficiently."
+  }
+  ],
+  "experiences": [
+    {
+      "title": "Product Owner",
+      "company": "PT. Sapta Muda Berkarya",
+      "location": "Bandung, ID",
+      "date": "December 2022 - May 2025",
+      "responsibilities": [
+        "Managed the entire project lifecycle from requirement gathering to post-launch maintenance.",
+        "Created flowcharts, UML diagrams, Use Cases, and BPMN to articulate user requirements in detail.",
+        "Led sprint planning, retrospectives, and daily stand-ups using the Scrum methodology.",
+        "Prioritized features through backlog grooming and MVP validation.",
+        "Collaborated cross-functionally with design, technical, QA teams, and external clients.",
+        "Provided regular updates to stakeholders and maintained realistic client expectations.",
+        "Drafted and managed BRD/PRD documents and documented all scope changes.",
+        "Trained end-users and prepared comprehensive training documentation.",
+        "Managed risks and change to ensure project delivery on time and within budget."
+      ]
+    },
+    {
+      "title": "Fullstack Developer",
+      "company": "PT. Indiga Nusa Digitama",
+      "location": "Bandung, ID",
+      "date": "October 2022 - December 2022",
+      "responsibilities": [
+        "Collaborated with fellow developers and stakeholders to ensure timely project completion.",
+        "Designed UX/UI prototypes aligned with stakeholder needs and expectations.",
+        "Architected and implemented various APIs to enable seamless communication between front-end and back-end systems.",
+        "Utilized HTML5, CSS3, JavaScript, and PHP (Laravel) for application development."
+      ]
+    }
+  ],
+  "skills": {
+    "soft_skills": [
+      "Communication",
+      "Leadership",
+      "Problem Solving",
+      "Critical Thinking",
+      "Analytical Skills",
+      "Team Building",
+      "Stakeholder Management",
+      "Time Management"
+    ],
+    "technical_skills": [
+      "UI/UX Design (Figma, Whimsical)",
+      "Project Management & SDLC (Agile, Kanban, Waterfall, Scrum)",
+      "Visual Modeling (UML, BPMN, Flowcharts)",
+      "Task Management Tools (Jira, Trello, Airtable)",
+      "Microsoft Office Suite",
+      "Google Workspace"
+    ]
+  },
+  "educations": [
+    {
+      "institution": "Universitas Komputer Indonesia",
+      "faculty": "Faculty of Engineering and Computer Science",
+      "degree": "Bachelor of Information Systems",
+      "date": "October 2018 - August 2022",
+      "gpa": "3.58"
+    },
+    {
+      "institution": "Praktisi Polytechnic",
+      "faculty": "Faculty of Economic",
+      "degree": "Diploma of Taxation",
+      "date": "October 2021 - August 2024",
+      "gpa": "3.48"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Maintenance & Inventory Management",
+      "year": 2024,
+      "description": "Led the development of web and mobile systems for reporting machine repairs, preventive maintenance, and inventory management in the manufacturing sector."
+    },
+    {
+      "title": "Speech To Text",
+      "year": 2024,
+      "description": "Led the maintenance of web and mobile speech-to-text systems for machine accuracy reporting in the manufacturing sector."
+    },
+    {
+      "title": "MIS E-Procurement",
+      "year": 2023,
+      "description": "Led the development of a procurement system for BPDLH (Indonesia’s Environmental Fund Management Agency under the Ministry of Finance), enhancing efficiency and transparency in the procurement process."
+    },
+    {
+      "title": "MIS Fasilitas Dana Bergulir",
+      "year": 2023,
+      "description": "Directed the development of web and mobile platforms for funding distribution and loans to agricultural institutions and farmer groups, enhancing financial access and agricultural productivity."
+    },
+    {
+      "title": "KSP",
+      "year": 2022,
+      "description": "Designed a monitoring and evaluation system for KSP loan disbursement, improving efficiency and transparency."
+    },
+    {
+      "title": "Docu",
+      "year": 2022,
+      "description": "Developed an information system for strategic marketing services, creating new job opportunities for freelancers."
+    },
+    {
+      "title": "Gokarang",
+      "year": "2021-2022",
+      "description": "Developed a web-based information system for tourism and coral reef conservation in Karawang and Indramayu, using PHP Native and Laravel."
+    }
+  ],
+  "certifications": [
+    {
+      "name":"Certified Senior Tax (2023)",
+      "year":"2023"
+    },
+    {
+      "name":"Certified Junior Tax (2023)",
+      "year":"2023"
+    },
+    {
+      "name":"Microsoft Office Specialist (2022)",
+      "year":"2022"
+    },
+    {
+      "name":"BNSP Junior Office Operator (2022)",
+      "year":"2022"
+    },
+    {
+      "name":"BNSP Junior Web Developer (2022)",
+      "year":"2022"
+    },
+    {
+      "name":"Digitalent Kominfo Frontend Developer (2022)",
+      "year":"2022"
+    },
+    {
+      "name":"BNSP Designer Graphics (2018)",
+      "year":"2018"
+    }
+  ],
+  "instructors": [
+    {
+      "name":"Bimbingan Teknis Sistem Informasi ERP (2025)",
+      "year":"2025"
+    },
+    {
+      "name":"Bimbingan Teknis Arcgis/Qgis (2024)",
+      "year":"2024"
+    },
+    {
+      "name":"Bimbingan Teknis PHP 21 TER (2024)",
+      "year":"2024"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Indonesian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional Proficiency"
+    }
+  ]
+}
