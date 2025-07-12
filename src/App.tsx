@@ -6,11 +6,11 @@ import { ScrollToTopButton } from './components/atoms/scrollToTopButton'
 
 function App() {
   return (
-    <div className="m-auto ">
+    <>
       <Header/>
       <MainLayout/>
       <ScrollToTopButton />
-    </div>
+    </>
   )
 }
 

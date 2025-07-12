@@ -15,11 +15,11 @@ export const ProfileSummary = () => {
   const {profile} = useFetchProfile() as { profile: ProfileData[] };
 
   return (
-    <div className="col-start-2 col-end-5 ">
-      {profile?.map((data)=>{
+    <div className="lg:col-start-2 lg:col-end-5 md:col-start-1 md:col-end-4 sm:col-start-1 sm:col-end-4">
+      {profile?.map((data, index)=>{
         return (
         <div>
-          <p className="border-y-2 border-zinc-500 py-4 mb-4">{data.summary}</p>
+          <p className="border-y-2 border-zinc-500 py-4 mb-4" key={index}>{data.summary}</p>
           <div className="text-zinc-500">
             <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a> <br />
             <a href={data.contact.github}>Github</a><br/>

@@ -2,10 +2,10 @@ import { useFetchInstructor } from "../../hooks/useFetchInstructor"
 
 export const InstructorList = () => {
  const instructors = useFetchInstructor()
- console.log(instructors)
+
  return (
-  <div className="col-start-3 col-end-6 gap-4 border-t-2 border-zinc-500 pt-4 mb-4">
-   <h3 className="font-bold pb-4">Instructor</h3>
+  <div className="border-t-2 border-zinc-500 mt-4">
+   <h3 className="font-bold py-4">Instructor</h3>
    <ul className="list-disc mx-4">
    {instructors?.map((item)=>{
     return (
