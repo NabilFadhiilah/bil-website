@@ -1,25 +1,26 @@
 import { useState, useEffect} from "react"
-import { axiosInstance } from "../utils/axios";
-
-type EducationResponse = {
-  institution: string,
-  faculty: string,
-  degree: string,
-  date: string,
-  gpa: string,
-}
+import { fetchEducation } from "../services/educationService";
+import type { EducationResponse } from "../services/educationService";
 
 export const useFetchEducation = () => {
-  const [education, setEducation] = useState<EducationResponse[]>();
+  const [educations, setEducation] = useState<EducationResponse[]>();
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const fetchEducation = async () => {
-    const response = await axiosInstance.get<EducationResponse[]>("/educations");
-    setEducation(response.data);
-  }
+  const fetchData = async () => {
+    try {
+      const data = await fetchEducation();
+      setEducation(data);
+    } catch (err) {
+      setError(`Failed to fetch education ${err}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    fetchEducation()
+    fetchData()
   }, [])
 
-  return education
+  return {educations,isLoading,error}
 }

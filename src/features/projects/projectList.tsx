@@ -2,7 +2,9 @@ import { useFetchProject } from "../../hooks/useFetchProject"
 import { ProjectCard } from "./projectCard"
 
 export const ProjectList = () => {
- const projects = useFetchProject()
+ const {projects, isLoading, error} = useFetchProject()
+ if (isLoading) return <p>Loading...</p>;
+ if (error) return <p>{error}</p>;
 
  return (
   <div className="
@@ -13,8 +15,9 @@ export const ProjectList = () => {
    border-zinc-500 pt-4"
   >
    <h3 className="font-bold pb-4">Project</h3>
-   {projects?.map((project)=>{
+   {projects?.map((project,idx)=>{
     return <ProjectCard
+     key={idx}
      title={project.title}
      year={project.year}
      description={project.description}

@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react"
-import { axiosInstance } from "../utils/axios";
-
-type ProjectsResponse = {
- title: string,
- year: string,
- description: string,
-}
+import { fetchProjects, type ProjectsResponse } from "../services/projectService";
 
 export const useFetchProject = () => {
- const [project,setProject] = useState<ProjectsResponse[]>();
+ const [projects,setProject] = useState<ProjectsResponse[]>();
+ const [isLoading, setIsLoading] = useState<boolean>(true)
+ const [error, setError] = useState<string | null>(null);
 
- const fetchProjects = async () => {
-  const response = await axiosInstance.get<ProjectsResponse[]>("/projects");
-  setProject(response.data);
+ const fetchData = async () => {
+   try {
+     const data = await fetchProjects();
+     setProject(data);
+   } catch (err) {
+     setError(`Failed to fetch education ${err}`);
+   } finally {
+     setIsLoading(false);
+   }
  }
 
  useEffect(()=>{
-  fetchProjects()
+  fetchData()
  },[])
 
- return project
+ return {projects,isLoading,error}
 }

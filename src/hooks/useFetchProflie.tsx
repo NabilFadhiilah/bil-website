@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react"
-import { axiosInstance } from "../utils/axios";
+import { fetchProfile } from "../services/profileService";
 
 type ProfileResponse = {
   contact: object,
@@ -8,15 +8,23 @@ type ProfileResponse = {
 
 export const useFetchProfile = () => {
   const [profile, setProfile] = useState<ProfileResponse[]>();
+  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null);
 
-  const fetchProfile = async () => {
-    const response = await axiosInstance.get<ProfileResponse[]>("/basic_info");
-    setProfile(response.data);
+  const fetchData = async () => {
+    try {
+      const data = await fetchProfile();
+      setProfile(data);
+    } catch (err) {
+      setError(`Failed to fetch education ${err}`);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   useEffect(() => {
-    fetchProfile()
+    fetchData()
   }, [])
 
-  return {fetchProfile,profile}
+  return {profile, isLoading, error}
 }
